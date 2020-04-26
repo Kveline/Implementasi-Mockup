@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700&display=swap');
+
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+html {
+    overflow-x: hidden;
+}
+
+
+/* navbar */
+body {
+    background-color: #fcfeff;
+}
+
+nav {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+    top:0;
+
+}
+
+
+.gambar-logo {
+    width: 49px;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: #4B5D68;
+    font-size: 16px;
+    margin: 40px;
+
+}
+
+
+
+
+.button-request {
+    text-decoration: none;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+    padding: 14px 26px;
+    color: #212353;
+    font-size: 16px;
+}
+
+
+.humburger {
+    display: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    margin: 6px 0;
+    background-color: black;
+    width: 24px;
+    height: 4px;
+}
+
+/* rotasi bar 1 */
+
+.change .bar1{
+    transform : rotate(-45deg) translate(-7px, 6px);
+    transition : 0.74s;
+}
+
+/* rotasi bar 3 */
+.change .bar3{
+    transform : rotate(45deg) translate(-8px, -7px);
+    transition : 0.74s;
+}
+
+/* hilangin bar 2 */
+.change .bar2{
+    opacity : 0;
+}
+
+.nav-mobile{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #9C69E2;
+    z-index:1;
+    left : -100%;
+    transition : 0.75s;
+}
+
+.menu-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:90px;
+}
+
+.menu-mobile a{
+    color:white;
+    font-size:20px;
+    font-weight: bold;
+    margin: 6px;
+}
+
+
+/* end of navbar */
+
+
+/* content1 */
+
+.heading1 {
+    font-size: 64px;
+    color: #212353;
+    font-weight: bold;
+}
+
+.content1 {
+    margin-top: 120px;
+}
+
+
+.small-text1 {
+    color: #4B5D68;
+    font-weight: 300;
+    width: 389px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+
+.learn-more-button {
+    text-decoration: none;
+    color: white;
+    background: #9C69E2;
+    border-radius: 50px;
+    padding: 16px 20px;
+}
+
+.gambar1 {
+    margin-left: -140px;
+
+}
+
+.ilustrasi1 {
+    width: 780px;
+}
+
+/* end of content1 */
+
+
+
+/* content2 */
+
+.content2 {
+    background: rgba(240, 99, 184, 0.15);
+    border-radius: 50px;
+    margin-top: 120px;
+}
+
+.heading2 {
+    font-size: 40px;
+    color: #212353;
+    font-weight: bold;
+}
+
+.small-text2 {
+    color: #4B5D68;
+    font-weight: 300;
+    width: 389px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.text2 {
+    margin-top: 132px;
+}
+
+
+/* end of content2 */
+
+
+/* feature-text */
+
+.feature-text {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.small-text3 {
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    color: #4B5D68;
+    margin-top: 36px;
+    width: 50%;
+    margin: auto;
+}
+
+
+
+/* end of feature text */
+
+
+
+/* fitur */
+
+
+.fitur {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+
+
+.nama-fitur {
+    color: #212353;
+    font-size: 22px;
+}
+
+.penjelasan-fitur {
+    color: #4B5D68;
+}
+
+.detail-fitur {
+    background: rgba(104, 201, 186, 0.1);
+    border-radius: 50px;
+    padding: 70px;
+    width: 80% !important;
+    padding-left: 120px;
+}
+
+.gambar-fitur {
+    width: 180px;
+    margin-right: -110px;
+}
+
+
+
+/* end of fitur */
+
+
+
+
+/* testimonial */
+
+.testimonial {
+    text-align: center;
+    
+    background: #9C69E2;
+border-radius: 50px;
+    padding: 60px;
+    width: 80%;
+    margin: 80px auto;
+    padding-bottom: 80px;
+
+}
+
+.testimonial-title{
+    color: white;
+    font-weight: bold;
+}
+
+.box-testi {
+    display: flex;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+    border-radius: 20px;
+    justify-content: center;
+    width: 570px;
+    padding: 40px;
+}
+
+.kata-kata {
+    text-align: left;
+    margin-left: 16px;
+}
+
+.nama-orang{
+    color: #212353;
+    letter-spacing: 0.005em;
+    font-weight: 300;
+
+
+}
+
+.web-orang{
+    color: #9C69E2;
+    letter-spacing: 0.01em;
+    font-weight: 300;
+    margin-top: -18px;
+
+}
+
+.detail-orang{
+    color: #4B5D68;
+    font-weight: 300;
+}
+
+
+/* end of testimonial */
+
+
+/* footer */
+
+.first-line{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.try-for{
+    font-weight: bold;
+color: #212353;
+}
+
+.get-limited{
+    color: #4B5D68;
+    font-weight: 300;
+}
+
+.firstline-button a{
+    margin-left: 10px;
+}
+
+.firstline-button .learn-more-button{
+    background: #F063B8;
+}
+
+
+.logo-dan-sosmed{
+    text-align: center;
+    margin-top: 32px;
+}
+
+.nama-web{
+    color: #212353;
+    font-weight: 300;
+    margin-top: 12px;
+}
+
+.logo-sosmed{
+    margin-top: 20px;
+}
+
+.logo2{
+    margin-top: 32px;
+}
+
+.sosmed{
+    margin-top: 32px;
+}
+
+.logo-sosmed a{
+    margin: 12px;
+}
+
+
+
+
+/* end of footer */
+
+
+
+
+
+@media only screen and (max-width:600px) {
+    .humburger {
+        display: inline-block;
+    }
+
+    .menu {
+        display: none;
+
+    }
+
+    .button-demo {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 30px;
+        margin-top: 0;
+    }
+
+    .content1 {
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+
+    .ilustrasi1 {
+        width: 97%;
+
+    }
+
+    .gambar1 {
+        margin-left: 0;
+    }
+
+    .heading1 {
+        font-size: 38px;
+        margin-top: 24px;
+
+    }
+
+    .text2 {
+        margin-top: 20px;
+        padding: 30px;
+    }
+
+    .heading2 {
+        font-size: 38px;
+    }
+
+    .small-text2 {
+        width: 90%;
+    }
+
+    .small-text1 {
+        width: 90%;
+    }
+
+    .ilustrasi2 {
+        width: 97%;
+    }
+
+
+    /* fitur */
+
+
+    .fitur {
+        flex-direction: column;
+    }
+
+    .gambar-fitur {
+        margin-right: 0;
+        margin-bottom: -72px;
+    }
+
+    .detail-fitur {
+        padding: 42px;
+        padding-top: 72px;
+
+    }
+
+
+
+    /* end of fitur */
+
+
+    /* testimonial */
+
+    .box-testi{
+        width: 100% ;
+    }
+
+    .testimonial{
+        width: 100%;
+        padding: 60px 8px;
+        padding-bottom: 80px;
+    }
+    /*end of testimonial  */
+
+
+    /* footer */
+
+    .first-line{
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+
+    .firstline-text{
+        margin-bottom: 20px;
+    }
+
+ 
+
+    /* end of footer */
+}
