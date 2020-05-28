@@ -125,7 +125,7 @@ nav {
 }
 
 .content1 {
-    margin-top: 120px;
+    margin-top: 160px;
 }
 
 
@@ -225,6 +225,8 @@ nav {
 .nama-fitur {
     color: #212353;
     font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 24px;
 }
 
 .penjelasan-fitur {
@@ -371,6 +373,14 @@ color: #212353;
 /* end of footer */
 
 
+@media only screen and (min-width:768px){
+    nav{
+        top: -42px;
+        padding: 20px;
+    }
+}
+
+
 
 
 
@@ -396,7 +406,7 @@ color: #212353;
 
     .content1 {
         flex-direction: column-reverse;
-        margin-top: 40px;
+        margin-top: 120px;
     }
 
     .ilustrasi1 {
