@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</head>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/owl.carousel.css">
 <body>
 
     <nav>
@@ -50,7 +52,7 @@
 
 
 
-    <div class="container">
+    <div class="container wow bounceInUp" data-wow-duration="2s">
         <div class="row content1">
             <div class="col-md-6">
                 <h1 class="heading1">
@@ -65,7 +67,7 @@
                 <a href="" class="learn-more-button">Learn More</a>
             </div>
 
-            <div class="col-md-6 gambar1">
+            <div class="col-md-6 gambar1 wow bounceInUp">
                 <img class="ilustrasi1" src="gambar1.png" alt="">
             </div>
 
@@ -73,7 +75,7 @@
 
 
 
-        <div class="row content2">
+        <div class="row content2 wow bounceInUp">
 
             <div class="col-md-6">
 
@@ -83,7 +85,7 @@
 
 
 
-            <div class="col-md-6 text2">
+            <div class="col-md-6 text2 wow bounceInUp">
                 <h1 class="heading2">
                     We are a high-level
                     data
@@ -102,7 +104,7 @@
         </div>
 
 
-        <div class="feature-text">
+        <div class="feature-text wow slideInLeft" data-wow-duration="2s">
             <h1 class="heading2">
                 Features
             </h1>
@@ -113,7 +115,7 @@
             </p>
         </div>
 
-        <div class="kumpulan-fitur">
+        <div class="kumpulan-fitur wow slideInLeft" data-wow-duration="2s">
 
             <div class="row">
                 <div class="col-md-6 fitur">
@@ -221,23 +223,68 @@
         <h3 class="testimonial-title">Testimonials</h3>
         <br>
         <br>
-        <div class="box-testi">
+        <div class="owl-carousel">
+            <div class="box-testi">
 
-            <div class="foto-orang">
-                <img src="orang.png" alt="">
+                <div class="foto-orang">
+                    <img src="orang.png" alt="">
+                </div>
+    
+                <div class="kata-kata">
+                    <p class="nama-orang">John Fang </p>
+                    <p class="web-orang">wordfaang.com</p>
+                    <p class="detail-orang">Suspendisse ultrices at diam lectus nullam.
+                        Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam
+                        laoreet nulla.</p>
+    
+                </div>
+    
+    
             </div>
 
-            <div class="kata-kata">
-                <p class="nama-orang">John Fang </p>
-                <p class="web-orang">wordfaang.com</p>
-                <p class="detail-orang">Suspendisse ultrices at diam lectus nullam.
-                    Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam
-                    laoreet nulla.</p>
+            <div class="box-testi">
 
+                <div class="foto-orang">
+                    <img src="orang.png" alt="">
+                </div>
+    
+                <div class="kata-kata">
+                    <p class="nama-orang">John Fang </p>
+                    <p class="web-orang">wordfaang.com</p>
+                    <p class="detail-orang">Suspendisse ultrices at diam lectus nullam.
+                        Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam
+                        laoreet nulla.</p>
+    
+                </div>
+    
+    
             </div>
 
+            <div class="box-testi">
 
+                <div class="foto-orang">
+                    <img src="orang.png" alt="">
+                </div>
+    
+                <div class="kata-kata">
+                    <p class="nama-orang">John Fang </p>
+                    <p class="web-orang">wordfaang.com</p>
+                    <p class="detail-orang">Suspendisse ultrices at diam lectus nullam.
+                        Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam
+                        laoreet nulla.</p>
+    
+                </div>
+    
+    
+            </div>
+
+            
+
+    
+    
+            </div>
         </div>
+        
 
 
 
@@ -295,35 +342,41 @@
 
 
     </footer>
-
-
-
-
+    <!-- Set up your HTML -->
 
     <br>
     <br>
     <br>
     <br>
+<script src="js/wow.js"></script>
+<script src="js/owl.carousel.js"></script>
 
     <script>
-        function openNav(element){
+ $('.owl-carousel').owlCarousel({
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      items : 1,
+     center : true
+  
+})
+        
+        new WOW().init();
+
+        function openNav(element) {
             let nav = document.getElementsByClassName("nav-mobile")[0];
-            
-            if(nav.style.left == "0px"){
+
+            if (nav.style.left == "0px") {
                 nav.style.left = "-100%";
                 element.classList.toggle("change");
-                
-            }
 
-            else{
+            } else {
                 nav.style.left = "0px";
                 element.classList.toggle("change");
-                
+
             }
 
-            
-        }
 
+        }
     </script>
 
 
